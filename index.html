@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title></title>
+  </head>
+  <body>
+    <!-- ToDo list -->
+    <div class="todo">
+      <ul class="todo_container">
+
+      </ul>
+
+    </div>
+
+    <!-- Input area to create a new Todo Item -->
+    <div class="input_button">
+      <input type="text" name="" value="" placeholder="Inserisci il testo">
+      <button type="button" name="button">Aggiungi</button>
+    </div>
+
+
+    <!-- Template handlebars -->
+
+    <script id="todos-template" type="text/x-handlebars-template">
+      <li data_id="{{ id }}" class="todo_item">
+        {{todoItem}}
+        <button class="delete" type="button" name="button">Rimuovi</button>
+      </li>
+    </script>
+
+    <!-- My script -->
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
